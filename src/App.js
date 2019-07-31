@@ -11,14 +11,12 @@ class App extends Component {
    this.enterHandle = this.enterHandle.bind(this);
  }
  handleChange(e) {
-   console.log("change");
    this.setState({
      task: e.target.value
    })
  }
  enterHandle(e) {
    e.preventDefault();
-   console.log("enter");
    this.setState({
     tasks: this.state.tasks.concat(this.state.task)
    });
